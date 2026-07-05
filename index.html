@@ -2,201 +2,81 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<title>Kateřina & Petr ❤️</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kateřina & Petr</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 <style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:'Inter',sans-serif;
-color:white;
-overflow:hidden;
-}
-
-.hero{
-height:100vh;
-background:
-linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.60)),
-url("hero1.jpg");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-padding:20px;
-text-align:center;
-}
-
-.card{
-
-background:rgba(255,255,255,.12);
-
-backdrop-filter:blur(18px);
-
-border:1px solid rgba(255,255,255,.25);
-
-padding:50px;
-
-border-radius:30px;
-
-max-width:700px;
-
-box-shadow:0 20px 60px rgba(0,0,0,.35);
-
-animation:fade 1.2s ease;
-
-}
-
-h1{
-
-font-family:"Cormorant Garamond",serif;
-
-font-size:72px;
-
-margin-bottom:15px;
-
-}
-
-.date{
-
-font-size:22px;
-
-opacity:.9;
-
-margin-bottom:25px;
-
-}
-
-p{
-
-font-size:20px;
-
-line-height:1.8;
-
-margin-bottom:15px;
-
-}
-
-.button{
-
-display:inline-block;
-
-margin-top:25px;
-
-padding:18px 42px;
-
-background:white;
-
-color:#222;
-
-text-decoration:none;
-
-font-size:22px;
-
-font-weight:600;
-
-border-radius:50px;
-
-transition:.35s;
-
-}
-
-.button:hover{
-
-transform:translateY(-5px) scale(1.05);
-
-box-shadow:0 15px 40px rgba(255,255,255,.35);
-
-}
-
-@keyframes fade{
-
-from{
-
-opacity:0;
-
-transform:translateY(30px);
-
-}
-
-to{
-
-opacity:1;
-
-transform:none;
-
-}
-
-}
-
-@media(max-width:700px){
-
-h1{
-
-font-size:48px;
-
-}
-
-.card{
-
-padding:35px 25px;
-
-}
-
-p{
-
-font-size:18px;
-
-}
-
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;background:#f8f5f2;color:#333}
+.hero{height:100vh;background:linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.55)),url("hero1.jpg") center/cover;display:flex;align-items:center;justify-content:center;padding:20px}
+.card{max-width:760px;text-align:center;color:#fff;background:rgba(255,255,255,.12);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.25);padding:45px;border-radius:28px;box-shadow:0 20px 50px rgba(0,0,0,.35)}
+h1{font:700 68px "Cormorant Garamond",serif}
+.date{margin:12px 0 24px;font-size:22px;opacity:.9}
+p{line-height:1.8;font-size:19px}
+.btn{display:inline-block;margin-top:30px;padding:18px 34px;border-radius:999px;background:#fff;color:#222;text-decoration:none;font-weight:700;transition:.3s}
+.btn:hover{transform:translateY(-3px);box-shadow:0 10px 30px rgba(255,255,255,.4)}
+section{max-width:1100px;margin:auto;padding:80px 20px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.box{background:#fff;border-radius:22px;padding:28px;box-shadow:0 10px 25px rgba(0,0,0,.08)}
+h2{font:700 46px "Cormorant Garamond",serif;margin-bottom:25px;text-align:center}
+.timeline div{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #eee}
+.gallery img{width:100%;height:260px;object-fit:cover;border-radius:18px;cursor:pointer;transition:.3s}
+.gallery img:hover{transform:scale(1.03)}
+footer{background:#1e1e1e;color:#fff;text-align:center;padding:35px}
+@media(max-width:700px){h1{font-size:48px}.card{padding:30px}h2{font-size:36px}}
 </style>
-
 </head>
-
 <body>
 
 <div class="hero">
-
 <div class="card">
-
 <h1>❤️ Kateřina & Petr ❤️</h1>
-
-<div class="date">
-Náš svatební den
+<div class="date">11. července 2026</div>
+<p>Děkujeme, že jste součástí našeho velkého dne.</p>
+<p>Budeme moc rádi, když s námi nasdílíte všechny fotografie a videa.</p>
+<a class="btn" target="_blank" href="https://photos.google.com/share/AF1QipPE-EVrRxRAeQC-ZaDreR0LLM8klsFdgAmsFWYNOSA3NlM1zzE01Og7RfJIHHCPxg?pli=1&key=eWxlOERfeGhUV0ZtZm9MaXBCZWwtRVZlSVpXZjJR">📸 Přidat fotografie</a>
+</div>
 </div>
 
-<p>
-Děkujeme, že slavíte s námi.
-</p>
-
-<p>
-Budeme moc rádi, když nahrajete své fotografie do našeho alba a pomůžete nám uchovat vzpomínky na tento výjimečný den.
-</p>
-
-<a class="button"
-href="https://photos.google.com/share/AF1QipPE-EVrRxRAeQC-ZaDreR0LLM8klsFdgAmsFWYNOSA3NlM1zzE01Og7RfJIHHCPxg?pli=1&key=eWxlOERfeGhUV0ZtZm9MaXBCZWwtRVZlSVpXZjJR"
-target="_blank">
-
-📸 Přidat fotografie
-
-</a>
-
+<section>
+<h2>Náš den</h2>
+<div class="grid">
+<div class="box timeline">
+<div><span>💍 Obřad</span><strong>13:00</strong></div>
+<div><span>🥂 Přípitek</span><strong>14:00</strong></div>
+<div><span>🍽️ Hostina</span><strong>16:00</strong></div>
+<div><span>🎉 Zábava</span><strong>Do rána</strong></div>
 </div>
 
+<div class="box">
+<h3>❤️ Děkujeme</h3>
+<br>
+<p>Každá fotografie zachytí jiný pohled na náš den. Budeme moc rádi, když nám pomůžete vytvořit společné vzpomínky.</p>
+<br>
+<a class="btn" target="_blank" href="https://photos.google.com/share/AF1QipPE-EVrRxRAeQC-ZaDreR0LLM8klsFdgAmsFWYNOSA3NlM1zzE01Og7RfJIHHCPxg?pli=1&key=eWxlOERfeGhUV0ZtZm9MaXBCZWwtRVZlSVpXZjJR">📷 Otevřít album</a>
 </div>
+</div>
+
+<h2 style="margin-top:70px">Naše chvíle</h2>
+<div class="grid gallery">
+<img src="hero1.jpg">
+<img src="hero1.jpg">
+<img src="hero1.jpg">
+</div>
+</section>
+
+<footer>
+S láskou ❤️ Kateřina & Petr
+</footer>
+
+<script>
+document.querySelectorAll(".gallery img").forEach(i=>{
+ i.onclick=()=>window.open(i.src,"_blank");
+});
+</script>
 
 </body>
 </html>
