@@ -1,74 +1,190 @@
-
 <!DOCTYPE html>
 <html lang="cs">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Svatba</title>
+
+<title>Kateřina & Petr ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
 body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(#fff,#f8f1ef);
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    height:100vh;
-    text-align:center;
+font-family:'Inter',sans-serif;
+color:white;
+overflow:hidden;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.35),rgba(0,0,0,.60)),
+url("hero1.jpg");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+padding:20px;
+text-align:center;
 }
 
 .card{
-    max-width:600px;
-    padding:40px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.25);
+
+padding:50px;
+
+border-radius:30px;
+
+max-width:700px;
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+animation:fade 1.2s ease;
+
 }
 
 h1{
-    font-size:48px;
-    color:#b76e79;
+
+font-family:"Cormorant Garamond",serif;
+
+font-size:72px;
+
+margin-bottom:15px;
+
+}
+
+.date{
+
+font-size:22px;
+
+opacity:.9;
+
+margin-bottom:25px;
+
 }
 
 p{
-    font-size:20px;
-    color:#555;
+
+font-size:20px;
+
+line-height:1.8;
+
+margin-bottom:15px;
+
 }
 
-a.button{
-    display:inline-block;
-    margin-top:30px;
-    padding:18px 35px;
-    background:#b76e79;
-    color:white;
-    text-decoration:none;
-    border-radius:12px;
-    font-size:22px;
-    transition:.2s;
+.button{
+
+display:inline-block;
+
+margin-top:25px;
+
+padding:18px 42px;
+
+background:white;
+
+color:#222;
+
+text-decoration:none;
+
+font-size:22px;
+
+font-weight:600;
+
+border-radius:50px;
+
+transition:.35s;
+
 }
 
-a.button:hover{
-    background:#9f5b66;
+.button:hover{
+
+transform:translateY(-5px) scale(1.05);
+
+box-shadow:0 15px 40px rgba(255,255,255,.35);
+
 }
+
+@keyframes fade{
+
+from{
+
+opacity:0;
+
+transform:translateY(30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:none;
+
+}
+
+}
+
+@media(max-width:700px){
+
+h1{
+
+font-size:48px;
+
+}
+
+.card{
+
+padding:35px 25px;
+
+}
+
+p{
+
+font-size:18px;
+
+}
+
+}
+
 </style>
 
 </head>
+
 <body>
+
+<div class="hero">
 
 <div class="card">
 
 <h1>❤️ Kateřina & Petr ❤️</h1>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-.hero{
-    background:
-    linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.60)),
-    url("hero1.jpg");
-    background-size:cover;
-    background-position:center;
-}
-<p>Děkujeme, že slavíte s námi!</p>
+<div class="date">
+Náš svatební den
+</div>
 
-<p>Budeme moc rádi, když nahrajete své fotografie do našeho alba.</p>
+<p>
+Děkujeme, že slavíte s námi.
+</p>
+
+<p>
+Budeme moc rádi, když nahrajete své fotografie do našeho alba a pomůžete nám uchovat vzpomínky na tento výjimečný den.
+</p>
 
 <a class="button"
 href="https://photos.google.com/share/AF1QipPE-EVrRxRAeQC-ZaDreR0LLM8klsFdgAmsFWYNOSA3NlM1zzE01Og7RfJIHHCPxg?pli=1&key=eWxlOERfeGhUV0ZtZm9MaXBCZWwtRVZlSVpXZjJR"
@@ -77,6 +193,8 @@ target="_blank">
 📸 Přidat fotografie
 
 </a>
+
+</div>
 
 </div>
 
